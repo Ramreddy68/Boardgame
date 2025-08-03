@@ -6,9 +6,9 @@ pipeline {
         maven 'maven3.6'
         jdk 'jdk17'
     }
-         stage('Hello') {
+         stage('Jenkinsfile') {
             steps {
-                echo 'Hello World'
+                echo 'New jenkinsfile'
             }
     stages {
         
