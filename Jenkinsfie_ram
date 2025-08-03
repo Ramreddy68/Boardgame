@@ -5,12 +5,12 @@ pipeline {
         maven 'maven3.6'
         jdk 'jdk17'
     }
-         stage('Jenkinsfile') {
+         
+    stages {
+        stage('Jenkinsfile') {
             steps {
                 echo 'New jenkinsfile'
             }
-    stages {
-        
         stage('compile') {
             steps {
                 sh 'mvn compile'
