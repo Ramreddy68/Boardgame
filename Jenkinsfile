@@ -8,9 +8,9 @@ pipeline {
 
     stages {
         
-        stage('Compile') {
+        stage('compile') {
             steps {
-             sh 'mvn compile'
+                sh 'mvn compile'
             }
         }
         stage('test') {
@@ -18,9 +18,9 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Package') {
+        stage('package') {
             steps {
-               sh 'mvn package'
+                sh 'mvn package'
             }
         }
         stage('Hello') {
@@ -28,5 +28,6 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        
     }
 }
